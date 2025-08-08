@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Kumar - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Updated font to Gowun Dodum -->
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <!-- Google Fonts Material Symbols Rounded -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        body {
+            /* Updated font-family to Gowun Dodum */
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f3f4f6;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .text-accent-maroon {
+            color: #97222b;
+        }
+        .hover\:text-accent-maroon:hover {
+            color: #97222b;
+        }
+        .hover\:text-dark-maroon:hover {
+            color: #6a191f;
+        }
+
+        /* --- Custom Animations --- */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        /* Delaying animations for a staggered effect */
+        .animate-delay-200 { animation-delay: 0.2s; }
+        .animate-delay-400 { animation-delay: 0.4s; }
+        .animate-delay-600 { animation-delay: 0.6s; }
+        .animate-delay-800 { animation-delay: 0.8s; }
+        .animate-delay-1000 { animation-delay: 1.0s; }
+
+        /* Smooth transition for hover effects */
+        .transition-transform-hover {
+            transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<!-- Changed the background color to a much lighter golden shade -->
+<body class="bg-[#FDFCEF] text-gray-800 antialiased">
+
+    <!-- Header with a simple golden color -->
+    <!-- The width is set to full, and the background color is a light goldenrod -->
+    <header class="w-full bg-[#FADFAD] py-4">
+        <!-- The user requested no content in the header -->
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 md:px-8 py-12">
+
+        <!-- Introduction Section -->
+        <section id="about" class="py-16 md:py-24 text-center">
+            <div class="w-full">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight mb-4 animate-fadeInUp">
+                    Aman Kumar
+                </h1>
+                <!-- The color has been changed to a standard Tailwind blue -->
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-blue-600 animate-fadeInUp animate-delay-200">
+                    Research Scholar, IIT Tirupati
+                </h2>
+                <!-- Highlighted the institute name in the introductory paragraph with an increased font size -->
+                <!-- Removed the requested sentence here -->
+                <p class="text-lg text-gray-600 max-w-xl mx-auto animate-fadeInUp animate-delay-400">
+                    I am a Research Scholar working in the Department of Computer Science and Engineering at the <span class="text-accent-maroon font-bold text-xl">Indian Institute of Technology, Tirupati</span>. My research focuses on the intersection of Software Engineering and Artificial Intelligence.
+                </p>
+                <div class="mt-8 flex justify-center space-x-4 animate-fadeInUp animate-delay-600">
+                    <a href="https://linkedin.com/in/atyro" target="_blank" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                        <!-- LinkedIn Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.763s.784-1.763 1.75-1.763 1.75.79 1.75 1.763-.783 1.763-1.75 1.763zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://github.com/aTyro1" target="_blank" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                        <!-- GitHub Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.465-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.771.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.6.804.576 4.766-1.587 8.197-6.09 8.197-11.387 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <!-- Reverted download icon with original font size -->
+                    <a href="__fetchfile__{uploaded:Resume_Aman_Kumar.pdf}" download="Aman_Kumar_Resume.pdf" class="text-gray-600 hover:text-gray-900 transition-colors duration-300" title="Download Resume">
+                        <span class="material-symbols-rounded" style="font-size: 24px;">download</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 md:py-24 border-t border-gray-300">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-12 animate-fadeInUp">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1: Saathi -->
+                <!-- Changed background color to a complementary light golden shade -->
+                <div class="bg-[#FFFBEF] rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 animate-fadeInUp animate-delay-200">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">
+                        Saathi: A Sign Translation System
+                        <!-- Link to the project with an external link icon -->
+                        <a href="https://rail-saathi-cdac.vercel.app/" target="_blank" rel="noopener noreferrer" class="ml-2 text-gray-600 hover:text-gray-900 transition-colors duration-300" title="View Project">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-600 mb-4">Feb, 2024 - May, 2024</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Real-time sign detection and translation for Indian Railway Corpus.</li>
+                        <li>Integrated a chatbot with the OLLAMA Mistral model for enquiries.</li>
+                        <li>Technologies: LangChain.js, React, Vue.js, Flask, Blender, OpenCV, TensorFlow.</li>
+                    </ul>
+                </div>
+                <!-- Project Card 2: Academic influence analysis -->
+                <!-- Changed background color to a complementary light golden shade -->
+                <div class="bg-[#FFFBEF] rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 animate-fadeInUp animate-delay-400">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">
+                        Academic Influence Analysis
+                        <!-- Placeholder link as no URL was provided in the resume -->
+                        <a href="#" class="ml-2 text-gray-400 cursor-not-allowed" title="Link not provided">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-600 mb-4">Aug, 2023 - Dec, 2023</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Performed citation analysis on DBLP dataset to identify collaboration patterns.</li>
+                        <li>Used Random Walk with Restart (RWR) to predict collaboration.</li>
+                        <li>Technologies: NLTK, Python, Django, NetworkX.</li>
+                    </ul>
+                </div>
+                <!-- Project Card 3: College ER system -->
+                <!-- Changed background color to a complementary light golden shade -->
+                <div class="bg-[#FFFBEF] rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 animate-fadeInUp animate-delay-600">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">
+                        College ER System
+                        <!-- Placeholder link as no URL was provided in the resume -->
+                        <a href="#" class="ml-2 text-gray-400 cursor-not-allowed" title="Link not provided">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-600 mb-4">Oct, 2021 - Feb, 2022</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Developed ER software using .NET and a student application with Flutter.</li>
+                        <li>Provided one-stop information access for college officials and students.</li>
+                        <li>Technologies: C#, Flutter, .NET, PHP, MySQL, Figma.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 md:py-24 border-t border-gray-300">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-12 animate-fadeInUp">Skills</h2>
+            <div class="bg-[#FFFBEF] rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 animate-fadeInUp">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Technical Skills</h3>
+                <div class="space-y-4 text-gray-700">
+                    <p><span class="font-bold">Web Stack:</span> MERN, React, Django, Tailwind, Bootstrap, Three.js, R3F, Langchain</p>
+                    <p><span class="font-bold">Mobile Stack:</span> Flutter, React Native</p>
+                    <p><span class="font-bold">Backend:</span> Nginx, Gunicorn, PHP, .NET, Vercel, Apache, GraphQL, BAAS</p>
+                    <p><span class="font-bold">UI/UX:</span> Figma, Canvas, Illustrator</p>
+                    <p><span class="font-bold">Data Science:</span> Scikit, Tensorflow, OpenCV, NLTK, Pycharm, Numpy, Pandas, Matplotlib, Machine Learning, Natural Language Processing, AI</p>
+                    <p><span class="font-bold">Database:</span> MySql, MsSql, Oracle Databases, SQLite, MongoDB, Supabase, Firebase</p>
+                    <p><span class="font-bold">Tools & Platforms:</span> Git, Docker, Jenkins, SSH, Blender, Linux, Windows, Unity</p>
+                    <p><span class="font-bold">Soft Skills:</span> Event Management, Time management, Listening skill</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer with a simple golden color -->
+    <!-- The width is set to full, and the background color is a light goldenrod -->
+    <footer class="w-full bg-[#FADFAD] py-4">
+        <!-- The user requested no content in the footer -->
+    </footer>
+
+</body>
+</html>
